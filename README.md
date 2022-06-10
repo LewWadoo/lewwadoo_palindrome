@@ -1,6 +1,6 @@
 # LewwadooPalindrome
 
-This gem is for recognizing whether a string is a palindrome. It is being made by following the tutorial "[https://www.learnenough.com/course/ruby/testing/testing_setup](Learn Enough Ruby to be Dangerous)".
+This gem is for recognizing whether a string or an integer is a palindrome. It is being made by following the tutorial "[https://www.learnenough.com/course/ruby/testing/testing_setup](Learn Enough Ruby to be Dangerous)".
 
 ## Installation
 
@@ -14,7 +14,8 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-There is no usage yet. Just watch it evolving.
+"Madam, I'm Adam.".palindrome?
+135531.palindrome?
 
 ## Development
 

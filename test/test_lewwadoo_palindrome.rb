@@ -24,6 +24,18 @@ class TestLewwadooPalindrome < Minitest::Test
   end
 
   def test_letters
-    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
+    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters_and_digits
+  end
+
+  def test_digits
+    assert_equal "123453", 123453.letters_and_digits
+  end
+
+  def test_integer_non_palindrome
+    refute 21345.palindrome?
+  end
+
+  def test_integer_palindrome
+    assert 1234321.palindrome?
   end
 end

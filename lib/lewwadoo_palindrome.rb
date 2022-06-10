@@ -2,7 +2,7 @@
 
 require_relative "lewwadoo_palindrome/version"
 
-class String
+module Palindrome
 
   # Returns true for a palindrome, false otherwise.
   def palindrome?
@@ -10,20 +10,22 @@ class String
   end
 
   # Returns the letters in the string.
-  def letters
-    letters_array = []
-    for letter_index in 0..self.length - 1 do
-      if (self[letter_index].match?(/[a-zA-Z]/))
-        letters_array << self[letter_index]
-      end
-    end
-    letters_array.join
+  def letters_and_digits
+    to_s.scan(/[a-z\d]/i).join
   end
 
   private
 
   # Returns content for palindrome testing.
   def processed_content
-    scan(/[a-z]/i).join.downcase
+    letters_and_digits.downcase
   end
+end
+
+class String
+  include Palindrome
+end
+
+class Integer
+  include Palindrome
 end
