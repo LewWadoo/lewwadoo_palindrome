@@ -6,10 +6,10 @@ module Palindrome
 
   # Returns true for a palindrome, false otherwise.
   def palindrome?
-    processed_content == processed_content.reverse
+    processed_content.length > 0 && processed_content == processed_content.reverse
   end
 
-  # Returns the letters in the string.
+  # Returns the letters and digits in the string.
   def letters_and_digits
     to_s.scan(/[a-z\d]/i).join
   end

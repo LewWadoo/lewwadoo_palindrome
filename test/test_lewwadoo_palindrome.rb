@@ -38,4 +38,8 @@ class TestLewwadooPalindrome < Minitest::Test
   def test_integer_palindrome
     assert 1234321.palindrome?
   end
+
+  def test_whitespaces_non_palindrome
+    refute "       ".palindrome?
+  end
 end

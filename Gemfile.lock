@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lewwadoo_palindrome (0.2.0)
+    lewwadoo_palindrome (1.0.0)
 
 GEM
   remote: https://rubygems.org/
